@@ -1,0 +1,115 @@
+\documentclass[10pt]{article}
+\usepackage{fullpage}
+\usepackage{color}
+\pagestyle{empty}
+
+\definecolor{mygrey}{gray}{0.80}
+\textheight=9.0in
+\raggedbottom
+\raggedright
+
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{0.375in}
+\addtolength{\textwidth}{0.5in}
+\addtolength{\topmargin}{-0.375in}
+\addtolength{\textheight}{0.75in}
+
+\newcommand{\name}{Alexander G. Silverstein}
+\newcommand{\addr}{5032 Forbes Ave., Pittsburgh, PA 15289}
+\newcommand{\phone}{(412) 605-4206}
+\newcommand{\email}{asilvers@andrew.cmu.edu}
+
+\newcommand{\bigname}[1]{
+  \begin{center}\fontfamily{phv}\selectfont\Huge
+\scshape#1\end{center}
+}
+
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\large \fcolorbox{black}{mygrey}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+
+\begin{document}
+
+\fontfamily{ppl} \selectfont
+
+\bigname{Alexander G. Silverstein}
+\vspace{-8pt} \rule{\textwidth}{1pt}
+\vspace{-1pt} {\small\itshape \addr \hfill \phone; \email}
+\vspace{8pt}
+
+\resheading{Education}
+\begin{itemize}
+\item
+    \ressubheading{Carnegie Mellon University}{Pittsburgh, PA}{B.S. in Computer Science}{Expected Graduation: May 2010}
+    \begin{itemize}
+        \resitem{Majoring in Computer Science}
+	\resitem{Expected Double Major in Economics}
+        \resitem{GPA: 3.58}
+    \end{itemize}
+    Notable Coursework:
+    \begin{itemize}
+    	\resitem{15-441: Computer Networks}
+    	\resitem{15-410: Operating System Design and Implementation}
+	\resitem{15-391: Technology Consulting in the Community}
+	\resitem{15-381: Artificial Intelligence}
+    \end{itemize}
+\end{itemize}
+
+\resheading{Experience}
+\begin{itemize}
+\item
+    \ressubheading{Carnegie Mellon University - Qatar}{Doha, Qatar}{Researcher}{January 2009 - Present}
+    \begin{itemize}
+        \resitem{Developing 3D motion tracking software utilizing the Wii remote}
+    \end{itemize}
+\item
+    \ressubheading{Carnegie Mellon University - Qatar}{Doha, Qatar}{Teaching Assistant}{January 2009 - Present}
+    \begin{itemize}
+        \resitem{Serve as Teaching Assistant for three undergraduate computer science courses}
+    \end{itemize}
+\item
+    \ressubheading{Carnegie Mellon University}{Pittsburgh, PA}{Study Group Leader}{September 2008 - December 2008}
+    \begin{itemize}
+        \resitem{Lead multiple study groups for 21-127: Concepts of Mathematics}
+    \end{itemize}
+\item
+    \ressubheading{Amazon.com}{Seattle, WA}{Software Development Engineer Intern in AWS}{May 2008 - August 2008}
+    \begin{itemize}
+        \resitem{Developed migration utility from Simple Storage System to Elastic Block Storage}
+        \resitem{Extended internal management utility in Ruby on Rails}
+    \end{itemize}
+\item
+    \ressubheading{Versatile Systems, Inc.}{Mechanicsburg, PA}{Java Development Internship}{March 2005 - August 2007}
+    \begin{itemize}
+        \resitem{Developed self-service credit application kiosk in Java as part of retail team}
+        \resitem{Managed system integration of Java application on modified Slax Linux distribution}
+	\resitem{Researched and implemented rewrite of custom Java rendering code to Swing}
+        \resitem{Researched migration of proprietary IVR system to in-house Cisco IPCC}
+        \resitem{Server installation at Comcast Corporation data center}
+    \end{itemize}
+\end{itemize}
+
+\resheading{Skills}
+\begin{description}
+\item[Operating Systems:]
+Linux (Gentoo, Ubuntu, and Slax), Windows 98/2000/XP
+\item[Computer Languages:]
+Proficient in Java, C, \LaTeX \\
+Familiar with Perl, Python, Ruby, UNIX Shells, SML/NJ
+\item[Tools:]
+Subversion, GDB, Eclipse, JUnit, Vim
+\end{description}
+
+\resheading{Achievements and Activities}
+\begin{description}
+  \item{Recognized as a National Merit Scholar.}
+  \item{Recognized as AP Scholar with Distinction.}
+  \item{Received William R. Pierce Academic Achievement Award in Computer Science.}
+  \item{Played snare drum competitively in marching band and senior drum and bugle corps.}
+\end{description}
+
+\end{document}
