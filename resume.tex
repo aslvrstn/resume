@@ -1,11 +1,12 @@
 \documentclass[10pt]{article}
-\usepackage{fullpage}
 \usepackage{color}
+\usepackage{fullpage}
+\usepackage{hyperref}
 \usepackage{tagging}
 \pagestyle{empty}
 
 % Uncomment to produce a two-pager with more discussion points.
-\usetag{long}
+% \usetag{long}
 
 \definecolor{mygrey}{gray}{0.80}
 \textheight=9.0in
@@ -51,16 +52,27 @@
     \ressubheading{Tableau}{Cambridge, MA}{Staff Software Engineer}{June 2018 - Present}
     \begin{itemize}
         \resitem{Designing and developing statistical features in Tableau}
+        \resitem{Helped design and implement \href{https://www.tableau.com/products/new-features/explain-data}{Explain Data}, one of two highlighted features in 2019.3}
+        \resitem{Wrote a cost/benefit analysis of scaling our build grid, resulting in a 30 minute reduction in precommit}
     \end{itemize}
 \item
-    \ressubheading{Empirical Systems (acquired by Tableau)}{Cambridge, MA}{Software Engineer}{May 2016 - June 2018}
+    \ressubheading{\href{https://empirical.com/}{Empirical Systems} (acquired by Tableau)}{Cambridge, MA}{Software Engineer}{May 2016 - June 2018}
     \begin{itemize}
-        \resitem{Built statistical programming platform}
+        \resitem{First non-founding engineer. Helped grow team to five before acquisition}
+        \resitem{Built web-based statistical programming platform backed by AWS and Docker}
+        \resitem{Built our Flask-based Python server and designed and implemented our public REST interface}
+        \tagged{long}{\resitem{Built an OpenTracing-based distributed tracing system for performance monitoring}}
+        \resitem{Implemented a number of models in our C++ statistics engine}
+        \tagged{long}{\resitem{Built our logging infrastructure}}
+        \resitem{Built and maintained our public Python API, \href{https://pypi.org/project/edpanalyst/}{edpanalyst}, and our \href{https://betaplatform.empirical.com/doc/edpanalyst/sheets.html}{Google Sheets integration}}
+        \tagged{long}{\resitem{Built and maintained our \href{https://betaplatform.empirical.com/doc/edpanalyst/}{public documentation}}}
+        \resitem{Served as sales engineer and public statistics consultant}
     \end{itemize}
 \item
     \ressubheading{Google}{New York, NY}{Senior Software Engineer}{June 2012 - Present}
     \begin{itemize}
-        \resitem{Tech Lead of Google Contributor team}
+        \resitem{Tech Lead of \href{https://en.wikipedia.org/wiki/Google_Contributor}{Google Contributor} team}
+        \resitem{Led integration of real-time bidder and Google's payments infrastructure}
     \end{itemize}
 \item
     \ressubheading{DRW Trading Group}{London, England}{Senior Software Engineer}{July 2010 - June 2012}
@@ -83,11 +95,13 @@
         \resitem{Developed migration utility from Simple Storage System to Elastic Block Storage}
         \resitem{Extended internal management utility in Ruby on Rails}
     \end{itemize}
+\begin{taggedblock}{long}
 \item
     \ressubheading{Versatile Systems, Inc.}{Mechanicsburg, PA}{Java Development Internship}{March 2005 - August 2007}
     \begin{itemize}
         \resitem{Developed self-service credit application kiosk in Java}
     \end{itemize}
+\end{taggedblock}
 \end{itemize}
 
 \resheading{Education}
@@ -122,7 +136,7 @@ Proficient in Python, C++, Java, \LaTeX \\
 Competent in Javascript, HTML, CSS, UNIX Shells, Haskell, SQL \\
 Proficient once upon a time in SML/NJ
 \item[Tools:]
-Git, Subversion, GDB, Intellij, JUnit, Vim
+Git, various AWS services, Docker, Intellij, JUnit, Vim
 \end{description}
 
 \end{document}
